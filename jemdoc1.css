@@ -12,7 +12,6 @@ body {
 	/* padding-bottom: 8px; */
 	padding-bottom: 0px;
 	margin: 0;
-	position: relative;
 }
 
 
@@ -171,15 +170,7 @@ div#footer {
 	color: #c0c0c0;
 }
 
-footer {
-    background-color: orange;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    overflow: hidden;
-}
+
 
 
 div#footer a {
@@ -384,6 +375,7 @@ table.imgtable, table.imgtable td {
     text-align: left;
 
 }
+
 
 
 
