@@ -14,7 +14,9 @@ body {
 	margin: 0;
 }
 
-
+.wrap {
+  text-wrap: wrap;
+}
 
 #layout-menu {
 /*	background: #f6f6f6;*/
@@ -376,6 +378,7 @@ table.imgtable, table.imgtable td {
     text-align: left;
 
 }
+
 
 
 
