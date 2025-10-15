@@ -169,6 +169,13 @@ div#footer {
 	color: #c0c0c0;
 }
 
+footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
+
 div#footer a {
 	color: #80a0b0;
 }
@@ -369,4 +376,5 @@ img {
 table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
+
 }
