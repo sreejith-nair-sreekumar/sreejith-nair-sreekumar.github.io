@@ -14,6 +14,7 @@ body {
 	margin: 0;
 }
 
+
 #layout-menu {
 /*	background: #f6f6f6;*/
 	background: white;
@@ -169,15 +170,7 @@ div#footer {
 	color: #c0c0c0;
 }
 
-body {
-    margin-bottom: 60px; /* footer height */
-}
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    height: 60px;
-}
 
 div#footer a {
 	color: #80a0b0;
@@ -381,4 +374,5 @@ table.imgtable, table.imgtable td {
     text-align: left;
 
 }
+
 
