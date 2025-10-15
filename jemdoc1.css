@@ -172,16 +172,14 @@ div#footer {
 }
 
 footer {
+    background-color: orange;
     position: absolute;
-    background: #ededed;
-    padding: 25px;
-    color: #000;
-    right: 0;
-    bottom: 0;
     left: 0;
-    transform: translateY(100%);
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
 }
-
 
 
 div#footer a {
@@ -386,6 +384,7 @@ table.imgtable, table.imgtable td {
     text-align: left;
 
 }
+
 
 
 
