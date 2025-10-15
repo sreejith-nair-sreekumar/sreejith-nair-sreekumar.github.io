@@ -12,6 +12,7 @@ body {
 	/* padding-bottom: 8px; */
 	padding-bottom: 0px;
 	margin: 0;
+	position: relative;
 }
 
 
@@ -168,6 +169,17 @@ div#footer {
 	padding-top: 0.1em;
 	margin-top: 4.0em;
 	color: #c0c0c0;
+}
+
+footer {
+    position: absolute;
+    background: #ededed;
+    padding: 25px;
+    color: #000;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
 }
 
 
@@ -374,5 +386,6 @@ table.imgtable, table.imgtable td {
     text-align: left;
 
 }
+
 
 
