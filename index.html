@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sreejith Sreekumar | Researcher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Inter', sans-serif;
+background: #f7f9fc;
+color: #1f2937;
+line-height: 1.7;
+}
+a {
+text-decoration: none;
+color: #2563eb;
+}
+a:hover {
+color: #1d4ed8;
+}
+.container {
+width: min(1180px, 92%);
+margin: auto;
+}
+header {
+background: linear-gradient(135deg, #0f172a, #1e293b);
+color: white;
+padding: 80px 0 70px;
+}
+.hero {
+display: grid;
+grid-template-columns: 320px 1fr;
+gap: 50px;
+align-items: center;
+}
+.profile-img {
+width: 100%;
+max-width: 300px;
+border-radius: 24px;
+object-fit: cover;
+border: 5px solid rgba(255,255,255,0.15);
+box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+.hero h1 {
+font-size: 3.4rem;
+font-weight: 700;
+margin-bottom: 12px;
+letter-spacing: -1px;
+}
+.hero .title {
+font-size: 1.2rem;
+color: #cbd5e1;
+margin-bottom: 24px;
+}
+.hero p {
+color: #e2e8f0;
+max-width: 760px;
+font-size: 1.05rem;
+}
+.button-group {
+margin-top: 30px;
+display: flex;
+gap: 14px;
+flex-wrap: wrap;
+}
+.btn {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 10px;
+font-weight: 600;
+transition: all 0.25s ease;
+}
+.btn-primary {
+background: #2563eb;
+color: white;
+}
+.btn-primary:hover {
+background: #1d4ed8;
+transform: translateY(-2px);
+}
+.btn-secondary {
+border: 1px solid rgba(255,255,255,0.3);
+color: white;
+}
+}
+.btn-secondary:hover {
+background: rgba(255,255,255,0.08);
+nav {
+background: white;
+border-bottom: 1px solid #e5e7eb;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+nav .container {
+display: flex;
+justify-content: center;
+gap: 32px;
+padding: 16px 0;
+flex-wrap: wrap;
+}
+nav a {
+color: #374151;
+font-weight: 500;
+}
+section {
+padding: 80px 0;
+}
+.section-title {
+font-size: 2rem;
+margin-bottom: 18px;
+color: #0f172a;
+font-weight: 700;
+}
+.section-subtitle {
+color: #6b7280;
+margin-bottom: 40px; 
+max-width: 800px;
+}
+.grid-2 {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 32px;
+}
+.card {
+background: white;
+padding: 28px;
+border-radius: 18px;
+box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+border: 1px solid #eef2f7;
+}
+.card h3 {
+margin-bottom: 12px;
+color: #111827;
+}
+.research-tags {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+margin-top: 24px;
+}
+.tag {
+background: #dbeafe;
+color: #1e40af;
+padding: 10px 16px;
+border-radius: 999px;
+font-size: 0.95rem;
+font-weight: 500;
+}
+.timeline {
+display: flex;
+flex-direction: column;
+gap: 24px;
+margin-top: 20px;
+}
+.timeline-item {
+background: white;
+padding: 24px;
+border-left: 5px solid #2563eb;
+border-radius: 14px;
+box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+.timeline-item h3 {
+margin-bottom: 8px;
+}
+.timeline-item span {
+display: inline-block;
+color: #6b7280;
+margin-bottom: 10px;
+font-size: 0.95rem;
+}
+.publication {
+background: white;
+border-radius: 16px;
+padding: 24px;
+margin-bottom: 22px;
+border: 1px solid #edf2f7;
+box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+}
+.publication h4 {
+margin-bottom: 10px;
+font-size: 1.08rem;
+color: #111827;
+}
+.publication p {
+color: #4b5563;
+}
+.publication .venue {
+display: inline-block;
+margin-top: 10px;
+color: #2563eb;
+font-weight: 600;
+}
+.contact-box {
+background: linear-gradient(135deg, #1e293b, #0f172a);
+color: white;
+border-radius: 24px;
+padding: 40px;
+text-align: center;
+}
+.contact-box h2 {
+margin-bottom: 14px;
+font-size: 2rem;
+}
+footer {
+padding: 28px 0;
+text-align: center;
+color: #6b7280;
+background: white;
+border-top: 1px solid #e5e7eb;
+}
+@media (max-width: 900px) {
+.hero {
+grid-template-columns: 1fr;
+text-align: center;
+}
+.hero p {
+margin: auto;
+}
+.button-group {
+justify-content: center;
+}
+.profile-img {
+margin: auto;
+}
+.grid-2 {
+grid-template-columns: 1fr;
+}
+.hero h1 {
+font-size: 2.6rem;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container hero">
+<div>
+</div>
+<img src="photo_1.jpeg" alt="Sreejith Sreekumar" class="profile-img">
+<div>
+<h1>Sreejith Sreekumar</h1>
+<div class="title">CNRS Researcher · Information Theory · Machine
+Learning · Quantum Information Science</div>
+<p>
+  I am a CNRS researcher at the Laboratoire des Signaux et Systèmes
+(L2S), CentraleSupélec, University Paris-Saclay.
+My research lies at the intersection of information theory, machine
+learning, mathematical statistics,
+and quantum information science.
+</p>
+<div class="button-group">
+<a href="mailto:sreejith.sreekumar@centralesupelec.fr" class="btn
+btn-primary">Contact Me</a>
+<a href="https://scholar.google.com/citations?
+user=CYCZIUQAAAAJ&hl=en" class="btn btn-secondary">Google Scholar</a>
+</div>
+</div>
+</div>
+</header>
+<nav>
+<div class="container">
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#experience">Experience</a>
+<a href="#publications">Publications</a>
+<a href="#teaching">Teaching</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+<section id="about">
+<div class="container">
+<h2 class="section-title">About</h2>
+<p class="section-subtitle">
+My work focuses on developing theoretical and statistical foundations
+for modern communication,
+learning, and quantum systems. I am particularly interested in
+distributed statistical inference,
+neural estimation of divergences, quantum hypothesis testing,
+privacy-aware learning, and wireless communications.
+</p>
+strong><br>
+<div class="grid-2">
+<div class="card">
+<h3>Education</h3>
+<p><strong>Ph.D. in Electrical and Electronic Engineering</
+Imperial College London, 2019</p>
+<br>
+<p><strong>M.Tech. in Communication Engineering</strong><br>
+IIT Bombay, 2013</p>
+<br>
+<p><strong>B.Tech. in Electrical Engineering</strong><br>
+National Institute of Technology Calicut, 2011</p>
+</div>
+<div class="card">
+<h3>Research Interests</h3>
+<div class="research-tags">
+<span class="tag">Information Theory</span>
+<span class="tag">Machine Learning</span>
+<span class="tag">Quantum Information</span>
+<span class="tag">Mathematical Statistics</span>
+<span class="tag">Signal Processing</span>
+<span class="tag">Privacy & Security</span>
+<span class="tag">Statistical Inference</span>
+<span class="tag">Wireless Communications</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="experience">
+<div class="container">
+<h2 class="section-title">Professional Experience</h2>
+<div class="timeline">
+<div class="timeline-item">
+<h3>CNRS Researcher</h3>
+<span>2025 – Present · CentraleSupélec, University Paris-Saclay</
+span>
+<p>Conducting research in information theory, quantum information
+science, and machine learning.</p>
+</div>
+<div class="timeline-item">
+<h3>Postdoctoral Research Associate</h3>
+<span>2023 – 2025 · RWTH Aachen University</span>
+<p>Worked at the Institute for Quantum Information on quantum
+divergences and statistical inference.</p>
+</div>
+<div class="timeline-item">
+<h3>Postdoctoral Research Associate</h3>
+<span>2020 – 2023 · Cornell University</span>
+<p>Research in neural estimation, information theory, and
+statistical learning.</p>
+</div>
+<div class="timeline-item">
+<h3>Ph.D. Researcher</h3>
+<span>2015 – 2019 · Imperial College London</span>
+<p>Dissertation: <em>Distributed Hypothesis Testing Under Privacy
+Constraints</em>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="publications">
+<div class="container">
+<h2 class="section-title">Selected Publications</h2>
+<p class="section-subtitle">
+A selection of recent journal and conference publications. Full
+publication list available upon request or via Google Scholar.
+</p>
+<div class="publication">
+<h4>Performance Guarantees for Quantum Neural Estimation of
+Entropies</h4>
+<p>S. Sreekumar, Z. Goldfeld, and M. Wilde</p>
+<span class="venue">Quantum, 2026</span>
+</div>
+<div class="publication">
+<h4>Distributed Quantum Hypothesis Testing under Zero-rate
+Communication Constraints</h4>
+<p>S. Sreekumar, C. Hirche, H-C. Cheng, and M. Berta</p>
+<span class="venue">Annales Henri Poincaré, 2025</span>
+</div>
+span>
+<div class="publication">
+<h4>Locally-Measured Rényi Divergences</h4>
+<p>T. Rippchen, S. Sreekumar and M. Berta</p>
+<span class="venue">IEEE Transactions on Information Theory, 2025</
+</div>
+<div class="publication">
+<h4>Neural Estimation of Statistical Divergences</h4>
+<p>S. Sreekumar and Z. Goldfeld</p>
+<span class="venue">Journal of Machine Learning Research, 2022</span>
+</div>
+<div class="publication">
+<h4>The Secrecy Capacity of Cost-constrained Wiretap Channels</h4>
+<p>S. Sreekumar, A. Bunin, Z. Goldfeld, H. H. Permuter, and S.
+Shamai</p>
+<span class="venue">IEEE Transactions on Information Theory, 2021</
+span>
+</div>
+</div>
+</section>
+<section id="teaching">
+<div class="container">
+<h2 class="section-title">Teaching & Academic Service</h2>
+<div class="grid-2">
+<div class="card">
+<h3>Teaching</h3>
+<p>
+Theory</strong>
+</p>
+</div>
+Planned instructor for the Master's level course:
+<strong>An Introduction to Classical and Quantum Information
+at CentraleSupélec in Fall 2026.
+<div class="card">
+<h3>Professional Activities</h3>
+<p>
+</p>
+</div>
+Reviewer for IEEE Transactions on Information Theory, JMLR,
+IEEE Transactions on Communications, Statistica Sinica,
+AISTATS, COLT, ISIT, and other major venues.
+</div>
+</div>
+</section>
+<section id="contact">
+<div class="container">
+<div class="contact-box">
+<h2>Get in Touch</h2>
+<p>
+opportunities?
+</p>
+<br>
+<p>
+</p>
+<br>
+btn-primary">
+Send Email
+</a>
+</div>
+</div>
+</section>
+Interested in collaborations, research discussions, or academic
+<strong>Email:</strong> sreejith.sreekumar@centralesupelec.fr
+<a href="mailto:sreejith.sreekumar@centralesupelec.fr" class="btn
+<footer>
+  <div class="container">
+© 2026 Sreejith Sreekumar · Academic Research Website
+</div>
+</footer>
+</body>
+</html>  
